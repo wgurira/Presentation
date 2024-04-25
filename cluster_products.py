@@ -78,8 +78,8 @@ print("Current Working Directory:", current_directory)
 #     groups[cluster].append(file)
 
 # # Streamlit UI to display clusters
-# st.title("Product Clustering")
-
+st.title("Product Clustering")
+st.success(current_directory)
 # selected_cluster = st.selectbox("Select a cluster to view:", list(range(10)))
 
 # if st.button("View Cluster"):
