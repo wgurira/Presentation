@@ -32,7 +32,7 @@ model = VGG16()
 model = Model(inputs=model.inputs, outputs=model.layers[-2].output)
 
 # Load images and extract features
-path = "../AmazonProductImages"
+path = "AmazonProductImages"
 os.chdir(path)
 products = [file.name for file in os.scandir(path) if file.name.endswith('.jpg')]
 
