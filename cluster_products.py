@@ -19,7 +19,7 @@ from random import randint
 import pandas as pd
 import pickle
 
-path = r"C:\Users\Cousins\Desktop\Web Mining and Recommender Systems\AmazonProductImages"
+path = r".\AmazonProductImages"
 # change the working directory to the path where the images are located
 os.chdir(path)
 
@@ -31,7 +31,7 @@ with os.scandir(path) as files:
   # loops through each file in the directory
     for file in files:
         if file.name.endswith('.jpg'):
-          # adds only the image files to the flowers list
+          # adds only the image files to the products list
             products.append(file.name)
 
 products[:10]
@@ -55,7 +55,7 @@ def extract_features(file, model):
     return features
 
 data = {}
-p = r"C:\Users\Cousins\Desktop\Web Mining and Recommender Systems\product_features.pkl"
+p = r".\product_features.pkl"
 
 # lop through each image in the dataset
 for product in products:
