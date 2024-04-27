@@ -12,7 +12,7 @@ import streamlit as st
 import pickle
 
 # Define the path to the images
-path = r"/mount/src/presentation/AmazonProductImages"
+path = "/mount/src/presentation/AmazonProductImages"
 os.chdir(path)
 
 # Function to load, preprocess, and normalize the image
